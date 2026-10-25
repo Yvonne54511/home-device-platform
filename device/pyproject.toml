@@ -1,0 +1,14 @@
+[build-system]
+# setuptools 61 is the first release that reads the [project] table (PEP 621).
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "device"
+version = "0.1.0"
+description = "Hardware driver layer for the home device platform"
+requires-python = ">=3.13"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
